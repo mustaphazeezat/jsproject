@@ -1,0 +1,200 @@
+// Variable
+$leading:   3em
+$fontsize:  1em 
+
+//animation
+@keyframes rotate
+    0%
+        transform: rotate(15deg)   
+
+    100%
+        transform: rotate(-15deg)
+
+@keyframes spin
+    0%
+        transform: scale(0.4) 
+
+    100%
+        transform: scale(1)
+// Base
+
+input, input[type], textarea
+    border: none
+    outline: none
+
+ul
+    list-style: none
+    padding: 0
+body
+    background-color: rgb(67, 232, 210)
+    font-family: 'Comfortaa', cursive
+    color: black
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'Bungee Shade', cursive
+
+.d-flx
+    display: flex
+    justify-content: space-between
+.b-b
+    border-bottom: 1px solid #888
+.a-p
+    padding: 1em 4em
+.overflow-s
+    overflow-y: scroll
+// main style
+.main-container
+    position: relative
+    width:  500px
+    margin:  auto
+    padding: 2em 3em
+    box-sizing: border-box
+    border: .5px solid rgba(0, 0, 0, 0.2)
+
+.title
+    position: relative
+    text-align: center
+    font-size: $fontsize
+.media-time-container
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+     
+    .tell-time
+        position: relative
+    .media-container
+        position: relative
+        width: 150px
+        .alarm
+            display: block !important
+            width: 10px
+            margin-top: 10px
+            margin-left: 40px
+            
+        .alarm-img
+            position: absolute
+            top: 0
+            left: 0
+            width: 100px
+            height: 100%
+        .alarm-img.anime
+            animation: spin  .8s ease-in-out  infinite
+    
+    .media-container.animation
+        animation: rotate  1s ease-in-out  infinite
+    
+
+.view
+    position: relative
+    height:     50vh
+    margin-top: 50px
+    .view1.in-active
+        display: none
+        
+    .view1.active
+        display: block
+
+    .view1
+        position: relative
+        width: 70%
+        margin: auto
+        .name
+            background: transparent
+            border-bottom: 1px solid #888888
+            padding: $fontsize / 2
+            margin-left: 6px
+        
+        .submit-btn
+            position: relative
+            background: #ffffff
+            border-radius: 5px
+            padding: $fontsize / 2  $fontsize
+            font-size: .9em
+            font-weight: 700
+            margin-left: 50%
+            transform: translate(-50%) 
+    .view2
+        display: none
+        position: relative
+        .alarm-lists
+            position: relative
+            margin-top: 30px
+            height: 40vh
+        .add-alarm-btn
+            position: absolute
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            bottom: 0
+            background-color: #fff
+            outline: none
+            border: none
+            right: 30px
+        
+    .view2.active
+        display: block
+       
+    .view3
+        display: none
+        .form
+            text-align: center
+            .alarm
+                font-size: 2em
+            label
+                text-transform: capitalize
+                margin-top: 20px
+                display: block
+                
+            .set-alarm,.title
+                width: 200px
+                height: 30px
+                padding: 5px
+                margin-top: 10px
+                box-sizing: border-box
+            .set-alarm-btn
+                position: absolute
+                width: 50px
+                height: 50px
+                bottom: 20px
+                left: 40%
+                border-radius: 50%
+                background:  #fff 
+    .view3.active
+        display: block
+               
+        
+    .view4.in-active
+        display: none
+    .view4.active
+        display: block
+        .image-container
+            position: relative
+            width: 100%
+            border-radius: 10px
+
+            .time-image
+                position: relative
+                width: 100%
+                height: 300px
+                border-radius: 5px
+                display: none
+        
+                img
+                    width: 100%
+                    height: 100%
+                    border-radius: 10px
+
+                .time
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    font-size: 1em
+                    padding: 12px
+                    font-family: 'Bungee', cursive
+                    transform: translate(-50%)
+                    color: #000000
+                    background-color: white
+
+            .time-image.active
+                display: block

@@ -1,0 +1,299 @@
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+input, input[type], textarea {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  background-color: #43e8d2;
+  font-family: 'Comfortaa', cursive;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bungee Shade', cursive;
+}
+
+.d-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-b {
+  border-bottom: 1px solid #888;
+}
+
+.a-p {
+  padding: 1em 4em;
+}
+
+.overflow-s {
+  overflow-y: scroll;
+}
+
+.main-container {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  padding: 2em 3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 1em;
+}
+
+.media-time-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.media-time-container .tell-time {
+  position: relative;
+}
+
+.media-time-container .media-container {
+  position: relative;
+  width: 150px;
+}
+
+.media-time-container .media-container .alarm {
+  display: block !important;
+  width: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.media-time-container .media-container .alarm-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+}
+
+.media-time-container .media-container .alarm-img.anime {
+  -webkit-animation: spin  .8s ease-in-out  infinite;
+          animation: spin  .8s ease-in-out  infinite;
+}
+
+.media-time-container .media-container.animation {
+  -webkit-animation: rotate  1s ease-in-out  infinite;
+          animation: rotate  1s ease-in-out  infinite;
+}
+
+.view {
+  position: relative;
+  height: 50vh;
+  margin-top: 50px;
+}
+
+.view .view1.in-active {
+  display: none;
+}
+
+.view .view1.active {
+  display: block;
+}
+
+.view .view1 {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+
+.view .view1 .name {
+  background: transparent;
+  border-bottom: 1px solid #888888;
+  padding: 0.5em;
+  margin-left: 6px;
+}
+
+.view .view1 .submit-btn {
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: .9em;
+  font-weight: 700;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.view .view2 {
+  display: none;
+  position: relative;
+}
+
+.view .view2 .alarm-lists {
+  position: relative;
+  margin-top: 30px;
+  height: 40vh;
+}
+
+.view .view2 .add-alarm-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 0;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  right: 30px;
+}
+
+.view .view2.active {
+  display: block;
+}
+
+.view .view3 {
+  display: none;
+}
+
+.view .view3 .form {
+  text-align: center;
+}
+
+.view .view3 .form .alarm {
+  font-size: 2em;
+}
+
+.view .view3 .form label {
+  text-transform: capitalize;
+  margin-top: 20px;
+  display: block;
+}
+
+.view .view3 .form .set-alarm, .view .view3 .form .title {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.view .view3 .form .set-alarm-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  left: 40%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.view .view3.active {
+  display: block;
+}
+
+.view .view4.in-active {
+  display: none;
+}
+
+.view .view4.active {
+  display: block;
+}
+
+.view .view4.active .image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.view .view4.active .image-container .time-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  display: none;
+}
+
+.view .view4.active .image-container .time-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.view .view4.active .image-container .time-image .time {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 1em;
+  padding: 12px;
+  font-family: 'Bungee', cursive;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #000000;
+  background-color: white;
+}
+
+.view .view4.active .image-container .time-image.active {
+  display: block;
+}
+/*# sourceMappingURL=index.css.map */

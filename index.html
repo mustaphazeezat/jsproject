@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alarm</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Comfortaa:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="title">
+            <h1>My Planner</h1>
+        </header>
+        <div class="media-time-container">
+            <p class="tell-time">The time is : </p>  
+            <div class="media-container">
+               <audio class="alarm" src="audio/alarm.mp3" controls>Not supported by browser</audio>
+                <img src="images/alarm-clock.svg" alt="" class="alarm-img">
+            </div>
+        </div>
+        <ul class="view">
+            <!-- <li class="view1 active">
+                <form action="" class="login-form" id="login-form">
+                   <p>Name: <input type="text" value="" name="name" class="name"></p> 
+                    <p><input type="radio" value="female" name="gender" checked="checked"> Female</p>
+                    <p> <input type="radio" value="male" name="gender">Male</p>
+                    <p><input type="radio" name="gender" id="" value="others">Others</p>
+                    <input type="submit" value="SUBMIT" class="submit-btn">
+                </form>
+            </li> -->
+            <li class="view2 active">
+                <ul class="alarm-lists a-p overflow-s">
+                    <!-- <li class="alarm-list d-flx b-b">
+                        <p class="alarm-title">
+                            wake-up
+                        </p>
+                        <p class="alarm-time">1pm</p>
+                    </li>
+                    <li class="alarm-list d-flx b-b">
+                        <p class="alarm-title">
+                            call Shola
+                        </p>
+                        <p class="alarm-time">
+                          12pm  
+                        </p>
+                    </li>
+                    <li class="alarm-list d-flx b-b">
+                        <p class="alarm-title">
+                            close shop
+                        </p>
+                        <p class="alarm-time">
+                            12am
+                        </p>
+                    </li>
+                    <li class="alarm-list d-flx b-b">
+                        <p class="alarm-title">
+                            close shop
+                        </p>
+                        <p class="alarm-time">
+                            12am
+                        </p>
+                    </li>
+                    <li class="alarm-list d-flx b-b">
+                            <p class="alarm-title">
+                                close shop
+                            </p>
+                            <p class="alarm-time">
+                                12am
+                            </p>
+                    </li> -->
+                    <!-- <li class="alarm-list d-flx b-b">
+                            <p class="alarm-title">
+                                close shop
+                            </p>
+                            <p class="alarm-time">
+                                12am
+                            </p>
+                        </li> -->
+                </ul>
+                <button class="add-alarm-btn">New</button>
+            </li>
+            <li class="view3">
+                <form action="" id="set-alarm-form" class="form" >
+                    <p class="alarm">
+                        Joana set your alarm
+                    </p>
+                    <label for="alarm-title">Title</label>
+                    <textarea name="title" id="alarm-title" class="title"  cols="30" rows="10" placeholder=" Set alarm"></textarea>
+                    <label for="set-alarm">Time</label>
+                    <input type="time" name="alarmTime" class="set-alarm" id="set-alarm">
+                    <input type="submit" name="submit" class="set-alarm-btn" value="Set">
+                </form>
+            </li>
+            <li class="view4 alarm-action in-active">
+                <ul class="image-container">
+                    <li class="time-image  active">
+                        <img src="images/morning.jpg" alt="image-title" height="200" width="200">
+                        <h3 class="time">Morning</h3>
+                    </li> 
+                    <li class="time-image">
+                        <img src="images/noon.jpg" alt="image-title" height="200" width="200">
+                        <h3 class="time">Noon</h3>
+                    </li>
+                    <li class="time-image">
+                        <img src="images/afternoon.jpg" alt="image-title" height="200" width="200">
+                        <h3 class="time">Afternoon</h3>
+                    </li> 
+                    <li class="time-image">
+                        <img src="images/evening.jpg" alt="image-title" height="200" width="200">
+                        <h3 class="time">Evening</h3>
+                    </li> 
+                    <li class="time-image">
+                        <img src="images/night.jpg" alt="image-title" height="200" width="200">
+                        <h3 class="time">Night</h3>
+                    </li>  
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
